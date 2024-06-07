@@ -11,6 +11,14 @@ body {
   font-family: "Sora", sans-serif;
 }
 
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 /* root */
 :root {
   --bg-header: #10375c;
@@ -664,4 +672,140 @@ a {
   color: #10375c;
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+/* Appointment */
+.appointment {
+  margin: 170px 0;
+}
+
+.appointment__inner {
+  background: #f6fbff;
+  text-align: center;
+  padding: 100px 178px;
+}
+
+.appointment__heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.appointment__heading::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 136px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #2e80ce;
+}
+
+.appointment__desc {
+  font-size: 1.6rem;
+  margin: 38px auto 0;
+  width: 617px;
+}
+
+.appointment__btn {
+  margin-top: 38px;
+}
+
+/* footer */
+.footer {
+  background: #10375c;
+  padding-top: 100px;
+  font-family: "Open Sans";
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+  margin-bottom: 20px;
+}
+
+.footer__desc {
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  margin-top: 21px;
+}
+
+.footer__list {
+  margin-bottom: 28px;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
+
+.footer-item__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+  white-space: nowrap;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #2e80ce;
+}
+
+.footer-form {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  padding: 10px;
+  color: white;
+}
+
+.footer-form__submit {
+  --height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  min-width: 108px;
+}
+.footer__copyright {
+  height: 1px;
+  border-top: 1px solid #406181;
+  padding: 28px 0 42px;
+}
+
+.footer__copyright-text {
+  text-align: center;
+  color: #aab3ba;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
 }
